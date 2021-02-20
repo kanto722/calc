@@ -1,0 +1,11 @@
+@import './variable';
+@import './common/globals.scss';
+// части калькулятора
+@import './templates/tab-nav.scss';
+@import './templates/tab-type.scss';
+@import './templates/tab-size.scss';
+@import './templates/tab-add.scss';
+@import './templates/calc-view.scss';
+
+// стили
+@import './components/component.scss';

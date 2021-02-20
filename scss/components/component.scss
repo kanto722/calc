@@ -1,0 +1,49 @@
+// активный таб
+.tab_active{
+    background: #E1F5FE;
+}
+.tab-type_active {
+    background: #E1F5FE;
+    border: none;
+}
+// активный таб
+
+// бордер для табов при стоке
+.tab_stock {
+    background: #FFFFFF;
+    border: 1px solid #6DB6FA;
+    box-sizing: border-box;
+}
+// бордер для табов при стоке
+
+// бордер для плус минус
+.border_dop{
+    border: 1px solid #6DB6FA;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+// бордер для плус минус
+// font-size для текста
+.fsz_text{
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+}
+.fsz_tab {
+    font-family: 'Rubik', sans-serif; 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #333333;
+}
+.fsz_mini {
+    font-family: 'Rubik', sans-serif; 
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+}
+// font-size для текста

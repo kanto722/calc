@@ -1,4 +1,4 @@
 *koala-config.json
 *.map
-*.scss
-*/scss
+# *.scss
+# */scss

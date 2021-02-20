@@ -1,8 +1,19 @@
 .tab-nav {
 }
 .tab-nav__title {
+    margin-bottom: 9px;
+    p {
+        color: $gray;
+
+    }
 }
 .tab-nav__btn {
+    display: flex;
 }
 .tab-nav__item {
+    p {
+        color: $black-bold;
+        padding: 7px 15px;
+        cursor: pointer;
+    }
 }

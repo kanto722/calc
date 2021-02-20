@@ -27,7 +27,7 @@
 .fsz_text{
     font-family: 'Rubik', sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: normal;
     font-size: 16px;
     line-height: 150%;
 }
@@ -47,3 +47,15 @@
     line-height: 150%;
 }
 // font-size для текста
+
+
+// hover 
+.tab-nav__item:hover{
+    background: #E1F5FE;
+}
+
+.hover-type:hover {
+    background: #E1F5FE;
+    border: none;
+}
+// hover

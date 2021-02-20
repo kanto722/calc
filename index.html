@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8" />
-        <title>KIIS</title>
+        <title>CALc</title>
         <meta name="description" content="" />
         <meta name="keywords" content="" />
     
@@ -16,11 +16,287 @@
         <!-- style -->
         <!-- перед версткой проверяй пути, разраб ты -->
         <link rel="stylesheet" href="/css/main.css">
-        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap" rel="stylesheet">
         <!-- style -->
     
  <body>
-     
+    <section class="calc">
+        <div class="container">
+            <form action="#">
+                <div class="calc-data">
+                    <div class="tab-nav">
+                        <div class="tab-nav__title">
+                            <p>Изделие</p>
+                        </div>
+                        <div class="tab-nav__btn">
+                            <div class="tab-nav__item">
+                                <p>Одинарные</p>
+                            </div>
+                            <div class="tab-nav__item">
+                                <p>Двойные</p>
+                            </div>
+                            <div class="tab-nav__item">
+                                <p>Тройные</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-type">
+                        <div class="tab-type__one">
+                            <div class="tab-one">
+                                <img src="/img/okno1.jpg" alt="окно">
+                            </div>
+                            <div class="tab-two">
+                                <img src="/img/okno1-2.jpg" alt="окно">
+                            </div>
+                            <div class="tab-three">
+                                <img src="/img/okno1-3.jpg" alt="окно">
+                            </div>
+                            <div class="tab-four">
+                                <img src="/img/okno1-4.jpg" alt="окно">
+                            </div>
+                        </div>
+                        <div class="tab-type__two">
+                            <div class="tab-one">
+                                <img src="/img/okno2.jpg" alt="окно">
+                            </div>
+                            <div class="tab-two">
+                                <img src="/img/okno2-2.jpg" alt="окно">
+                            </div>
+                            <div class="tab-three">
+                                <img src="/img/okno2-3.jpg" alt="окно">
+                            </div>
+                            <div class="tab-four">
+                                <img src="/img/okno2-4.jpg" alt="окно">
+                            </div>
+                        </div>
+                        <div class="tab-type__three">
+                            <div class="tab-one">
+                                <img src="/img/okno3.jpg" alt="окно">
+                            </div>
+                            <div class="tab-two">
+                                <img src="/img/okno3-2.jpg" alt="окно">
+                            </div>
+                            <div class="tab-three">
+                                <img src="/img/okno3-3.jpg" alt="окно">
+                            </div>
+                            <div class="tab-four">
+                                <img src="/img/okno3-4.jpg" alt="окно">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-size">
+                        <div class="size-text">
+                            <div class="size-text__item">
+                                <p>820x1200</p>
+                            </div>
+                            <div class="size-text__item">
+                                <p>800x300</p>
+                            </div>
+                            <div class="size-text__item">
+                                <p>900x1400</p>
+                            </div>
+                        </div>
+                        <div class="size-input">
+                            <div class="size-input__elem">
+                                <p>Ширина, мм:</p>
+                                <input type="text" value="820">
+                            </div>
+                            <div class="size-input__elem">
+                                <p>Высота, мм:</p>
+                                <input type="text" value="1200">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-add">
+                        <div class="tab-add__text">
+                            <p>Дополнительно:</p>
+                        </div>
+                        <div class="tab-add-container">
+                            <div class="tab-add_one">
+                                <div class="add-one__elem">
+                                    <div class="add-one__elem_plus">
+                                        <img src="/img/svg/plus.svg" alt="плюс">
+                                        <img src="/img/svg/minus.svg" alt="минус">
+                                    </div>
+                                    <p>Москитная сетка</p>
+                                    <span>+ 600руб</span>
+                                </div>
+                                <div class="tab-add__two">
+                                    <div class="add-two__elem">
+                                        <div class="add-two__elem_plus">
+                                            <img src="/img/svg/plus.svg" alt="плюс">
+                                            <img src="/img/svg/minus.svg" alt="минус">
+                                        </div>
+                                        <p>Подоконник</p>
+                                        <span>+157руб</span>
+                                    </div>
+                                    <div class="add-two__elem2">
+                                        <div class="elem2-matterial">
+                                            <div class="matterial__select">
+                                                <p>ПВХ</p>
+                                                <img src="/img/svg/arrowDown.svg" alt="стрелка">
+                                            </div>
+                                            <div class="matterial__width">
+                                                <input type="text" value="820">
+                                            </div>
+                                            <div class="matterial__height">
+                                                <p>150</p>
+                                                <img src="/img/svg/arrowDown.svg" alt="стрелка">
+                                            </div>
+                                        </div>
+                                        <div class="elem2-drop">
+                                            <div class="elem2-drop__one">
+                                                <p>Акрил</p>
+                                                <p>Акрил</p>
+                                                <p>Акрил</p>
+                                                <p>Акрил</p>
+                                                <p>Акрил</p>
+                                                <p>Акрил</p>
+                                                <p>Акрил</p>
+                                                <p>Акрил</p>
+                                            </div>
+                                            <div class="elem2-drop__two">
+                                                <p>150</p>
+                                                <p>150</p>
+                                                <p>150</p>
+                                                <p>150</p>
+                                                <p>150</p>
+                                                <p>150</p>
+                                                <p>150</p>
+                                                <p>150</p>
+                                                <p>150</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-add__three">
+                                    <div class="add-three__elem">
+                                        <div class="add-three__elem_plus">
+                                            <img src="/img/svg/plus.svg" alt="плюс">
+                                            <img src="/img/svg/minus.svg" alt="минус">
+                                        </div>
+                                        <p>Отливы</p>
+                                    </div>
+                                    <div class="add-three__block">
+                                        <div class="block-input">
+                                            <input type="text" value="820">
+                                        </div>
+                                        <div class="block-sum">
+                                            <p>150</p>
+                                            <img src="/img/svg/arrowDown.svg" alt="стрелка">
+                                        </div>
+                                        <div class="block-drop">
+                                            <p>150</p>
+                                            <p>150</p>
+                                            <p>150</p>
+                                            <p>150</p>
+                                            <p>150</p>
+                                            <p>150</p>
+                                            <p>150</p>
+                                            <p>150</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-add_two">
+                                <div class="add-two-wrap">
+                                    <div class="add-two__elem">
+                                        <div class="add-two__elem_plus">
+                                            <img src="/img/svg/plus.svg" alt="плюс">
+                                            <img src="/img/svg/minus.svg" alt="минус">
+                                        </div>
+                                        <p>Тонирование окна</p>
+                                        <span>+ 516руб</span>
+                                    </div>
+                                    <div class="add-two-wrap">
+                                        <div class="add-two__drop">
+                                            <p>Бронза</p>
+                                            <img src="/img/svg/arrowDown.svg" alt="стрелка">
+                                        </div>
+                                        <div class="add-two__dropDown">
+                                            <p>Бронза</p>
+                                            <p>Бронза</p>
+                                            <p>Бронза</p>
+                                            <p>Бронза</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add-two-wrap">
+                                    <div class="add-two__elem">
+                                        <div class="add-two__elem_plus">
+                                            <img src="/img/svg/plus.svg" alt="плюс">
+                                            <img src="/img/svg/minus.svg" alt="минус">
+                                        </div>
+                                        <p>Ламинация профиля</p>
+                                        <span>+ 516руб</span>
+                                    </div>
+                                    <div class="add-two-wrap">
+                                        <div class="add-two__drop">
+                                            <p>Макрома</p>
+                                            <img src="/img/svg/arrowDown.svg" alt="стрелка">
+                                        </div>
+                                        <div class="add-two__dropDown">
+                                            <p>Бронза</p>
+                                            <p>Бронза</p>
+                                            <p>Бронза</p>
+                                            <p>Бронза</p>
+                                        </div>
+                                    </div>
+                                    <div class="add-two-wrap">
+                                        <div class="add-two__radio">
+                                            <input type="radio">
+                                            <p>Внешняя сторона +25%</p>
+                                        </div>
+                                        <div class="add-two__radio">
+                                            <input type="radio">
+                                            <p>Внутренняя сторона +35%</p>
+                                        </div>
+                                        <div class="add-two__radio">
+                                            <input type="radio">
+                                            <p>Две стороны +55%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add-two-wrap">
+                                    <div class="add-two__elem">
+                                        <div class="add-two__elem_plus">
+                                            <img src="/img/svg/plus.svg" alt="плюс">
+                                            <img src="/img/svg/minus.svg" alt="минус">
+                                        </div>
+                                        <p>Монтаж + материалы</p>
+                                        <span>+ 716руб</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="calc-view">
+                    <div class="calc-view__fon">
+                        <img src="/img/okno1.jpg" alt="окно">
+                    </div>
+                    <div class="calc-view__price">
+                        <div class="view-price__sum">
+                            <div class="price-sum__one">
+                                <p>Базовый</p>
+                                <p><span>8647</span> руб.</p>
+                            </div>
+                            <div class="price-sum__two">
+                                <p>Стандарт</p>
+                                <p><span>10532</span> руб.</p>
+                            </div>
+                        </div>
+                        <div class="view-pice__btn">
+                            <input type="submit" placeholder="Уточнить цену">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
      
  </body>
  </html>

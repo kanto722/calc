@@ -8,8 +8,9 @@
     }
 
     &__one {
-        display: flex;
+        display: none;
     }
+
 
     &__two {
         // подставить display:flex;
@@ -20,42 +21,20 @@
         // подставить display:flex;
         display: none;
     }
+    
 }
 
-.tab-one {
+.tab-children {
     display: flex;
     align-items: center;
     img {
         padding: 6px 15px 6px 15px;
         cursor: pointer;
+        
     }
 }
 .tab {
 
     &_stock {
-    }
-}
-.tab-two {
-    display: flex;
-    align-items: center;
-    img {
-        padding: 6px 15px 6px 15px;
-        cursor: pointer;
-    }
-}
-.tab-three {
-    display: flex;
-    align-items: center;
-    img {
-        padding: 6px 15px 6px 15px;
-        cursor: pointer;
-    }
-}
-.tab-four {
-    display: flex;
-    align-items: center;
-    img {
-        padding: 6px 15px 6px 15px;
-        cursor: pointer;
     }
 }

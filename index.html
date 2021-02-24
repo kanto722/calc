@@ -30,13 +30,13 @@
                             <p class="fsz_mini">Изделие</p>
                         </div>
                         <div class="tab-nav__btn">
-                            <div class="tab-nav__item tab_stock">
+                            <div class="tab-nav__item tab_stock tab-bg" onclick="tabBtn(this, 'tab-type__one');">
                                 <p class="fsz_tab">Одинарные</p>
                             </div>
-                            <div class="tab-nav__item tab_stock">
+                            <div class="tab-nav__item tab_stock" onclick="tabBtn(this, 'tab-type__two');">
                                 <p class="fsz_tab">Двойные</p>
                             </div>
-                            <div class="tab-nav__item tab_stock">
+                            <div class="tab-nav__item tab_stock" onclick="tabBtn(this, 'tab-type__three');">
                                 <p class="fsz_tab">Тройные</p>
                             </div>
                         </div>
@@ -45,45 +45,45 @@
                         <div class="tab-type__title">
                             <p class="fsz_mini">Тип</p>
                         </div>
-                        <div class="tab-type__one">
-                            <div class="tab-one hover-type tab_stock">
+                        <div class="tab-type__one tab-clear tab-clear_active">
+                            <div class="tab-children hover-type tab_stock tab-type_active" onclick="tabNav(this);">
                                 <img src="/img/svg/okno1_mini.svg" alt="окно">
                             </div>
-                            <div class="tab-two hover-type tab_stock">
+                            <div class="tab-children hover-type tab_stock" onclick="tabNav(this);">
                                 <img src="/img/svg/okno1-2_mini.svg" alt="окно">
                             </div>
-                            <div class="tab-three hover-type tab_stock">
+                            <div class="tab-children hover-type tab_stock" onclick="tabNav(this);">
                                 <img src="/img/svg/okno1-3_mini.svg" alt="окно">
                             </div>
-                            <div class="tab-four hover-type tab_stock">
+                            <div class="tab-children hover-type tab_stock" onclick="tabNav(this);">
                                 <img src="/img/svg/okno1-4_mini.svg" alt="окно">
                             </div>
                         </div>
-                        <div class="tab-type__two">
-                            <div class="tab-one tab_stock">
+                        <div class="tab-type__two  tab-clear">
+                            <div class="tab-children hover-type tab_stock tab-type_active" onclick="tabNav(this);">
                                 <img src="/img/svg/okno2_mini.svg" alt="окно">
                             </div>
-                            <div class="tab-two tab_stock">
+                            <div class="tab-children hover-type tab_stock" onclick="tabNav(this);">
                                 <img src="/img/svg/okno2-2_mini.svg" alt="окно">
                             </div>
-                            <div class="tab-three tab_stock">
+                            <div class="tab-children hover-type tab_stock" onclick="tabNav(this);">
                                 <img src="/img/svg/okno2-3_mini.svg" alt="окно">
                             </div>
-                            <div class="tab-four tab_stock">
+                            <div class="tab-children hover-type tab_stock" onclick="tabNav(this);">
                                 <img src="/img/svg/okno2-4_mini.svg" alt="окно">
                             </div>
                         </div>
-                        <div class="tab-type__three">
-                            <div class="tab-one tab_stock">
+                        <div class="tab-type__three  tab-clear">
+                            <div class="tab-children hover-type tab_stock tab-type_active" onclick="tabNav(this);">
                                 <img src="/img/svg/okno3_mini.svg" alt="окно">
                             </div>
-                            <div class="tab-two tab_stock">
+                            <div class="tab-children hover-type tab_stock" onclick="tabNav(this);">
                                 <img src="/img/svg/okno3-2_mini.svg" alt="окно">
                             </div>
-                            <div class="tab-three tab_stock">
+                            <div class="tab-children hover-type tab_stock" onclick="tabNav(this);">
                                 <img src="/img/svg/okno3-3_mini.svg" alt="окно">
                             </div>
-                            <div class="tab-four tab_stock">
+                            <div class="tab-children hover-type tab_stock" onclick="tabNav(this);">
                                 <img src="/img/svg/okno3-4_mini.svg" alt="окно">
                             </div>
                         </div>
@@ -94,23 +94,23 @@
                         </div>
                         <div class="size-text">
                             <div class="size-text__item">
-                                <p class="fsz_text">820x1200</p>
+                                <p class="fsz_text"><span>820</span>x<span>1200</span></p>
                             </div>
                             <div class="size-text__item">
-                                <p class="fsz_text">800x300</p>
+                                <p class="fsz_text"><span>800</span>x<span>300</span></p>
                             </div>
                             <div class="size-text__item">
-                                <p class="fsz_text">900x1400</p>
+                                <p class="fsz_text"><span>900</span>x<span>1400</span></p>
                             </div>
                         </div>
                         <div class="size-input">
                             <div class="size-input__elem">
                                 <p class="fsz_text">Ширина, мм:</p>
-                                <input type="text" value="820">
+                                <input  type="number" value="820">
                             </div>
                             <div class="size-input__elem">
                                 <p class="fsz_text">Высота, мм:</p>
-                                <input type="text" value="1200">
+                                <input  type="number" value="1200">
                             </div>
                         </div>
                     </div>
@@ -120,87 +120,88 @@
                         </div>
                         <div class="tab-add-container">
                             <div class="tab-add_one">
-                                <div class="add-one__elem">
-                                    <div class="add-one__elem_plus">
-                                        <img src="/img/svg/plus.svg" alt="плюс">
-                                        <img src="/img/svg/minus.svg" alt="минус">
+                                <div class="add-two__elem">
+                                    <div class="add-one__elem_plus" onclick="svgAct(this);">
+                                        <div class="line"></div>
+                                        <div class="verline"></div>
                                     </div>
                                     <p class="fsz_text">Москитная сетка</p>
-                                    <span class="fsz_mini">+ 600руб</span>
+                                    <span class="fsz_mini span-add">+ 600руб</span>
                                 </div>
                                 <div class="tab-add__two">
                                     <div class="add-two__elem">
-                                        <div class="add-two__elem_plus">
-                                            <img src="/img/svg/plus.svg" alt="плюс">
-                                            <img src="/img/svg/minus.svg" alt="минус">
+                                        <div class="add-two__elem_plus" onclick="svgAct(this);">
+                                            <div class="line"></div>
+                                            <div class="verline"></div>
                                         </div>
                                         <p class="fsz_text">Подоконник</p>
-                                        <span class="fsz_mini">+157руб</span>
-                                    </div>
-                                    <div class="add-two__elem2">
-                                        <div class="elem2-matterial">
-                                            <div class="matterial__select">
-                                                <p class="fsz_mini">ПВХ</p>
-                                                <img src="/img/svg/arrowDown.svg" alt="стрелка">
+                                        <span class="fsz_mini span-add">+157руб</span>
+                                        <div class="add-two__elem2 drop-sync">
+                                            <div class="elem2-matterial">
+                                                <div class="matterial__select" onclick="matDrop();">
+                                                    <p class="fsz_mini">ПВХ</p>
+                                                    <img src="/img/svg/arrowDown.svg" alt="стрелка">
+                                                </div>
+                                                <div class="matterial__width">
+                                                    <input type="number" value="820">
+                                                </div>
+                                                <div class="matterial__height" onclick="matDrop2();">
+                                                    <p class="fsz_mini">150</p>
+                                                    <img src="/img/svg/arrowDown.svg" alt="стрелка">
+                                                </div>
                                             </div>
-                                            <div class="matterial__width">
-                                                <input type="text" value="820">
-                                            </div>
-                                            <div class="matterial__height">
-                                                <p class="fsz_mini">150</p>
-                                                <img src="/img/svg/arrowDown.svg" alt="стрелка">
+                                            <div class="elem2-drop">
+                                                <div class="elem2-drop__one close-drop">
+                                                    <p class="fsz_mini drop-hover">Акрил</p>
+                                                    <p class="fsz_mini drop-hover">Акрил</p>
+                                                    <p class="fsz_mini drop-hover">Акрил</p>
+                                                    <p class="fsz_mini drop-hover">Акрил</p>
+                                                    <p class="fsz_mini drop-hover">Акрил</p>
+                                                    <p class="fsz_mini drop-hover">Акрил</p>
+                                                    <p class="fsz_mini drop-hover">Акрил</p>
+                                                    <p class="fsz_mini drop-hover">Акрил</p>
+                                                </div>
+                                                <div class="elem2-drop__two close-drop">
+                                                    <p class="fsz_mini drop-hover">150</p>
+                                                    <p class="fsz_mini drop-hover">150</p>
+                                                    <p class="fsz_mini drop-hover">150</p>
+                                                    <p class="fsz_mini drop-hover">150</p>
+                                                    <p class="fsz_mini drop-hover">150</p>
+                                                    <p class="fsz_mini drop-hover">150</p>
+                                                    <p class="fsz_mini drop-hover">150</p>
+                                                    <p class="fsz_mini drop-hover">150</p>
+                                                    <p class="fsz_mini drop-hover">150</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="elem2-drop">
-                                            <div class="elem2-drop__one">
-                                                <p class="fsz_mini">Акрил</p>
-                                                <p class="fsz_mini">Акрил</p>
-                                                <p class="fsz_mini">Акрил</p>
-                                                <p class="fsz_mini">Акрил</p>
-                                                <p class="fsz_mini">Акрил</p>
-                                                <p class="fsz_mini">Акрил</p>
-                                                <p class="fsz_mini">Акрил</p>
-                                                <p class="fsz_mini">Акрил</p>
-                                            </div>
-                                            <div class="elem2-drop__two">
-                                                <p class="fsz_mini">150</p>
-                                                <p class="fsz_mini">150</p>
-                                                <p class="fsz_mini">150</p>
-                                                <p class="fsz_mini">150</p>
-                                                <p class="fsz_mini">150</p>
-                                                <p class="fsz_mini">150</p>
-                                                <p class="fsz_mini">150</p>
-                                                <p class="fsz_mini">150</p>
-                                                <p class="fsz_mini">150</p>
-                                            </div>
-                                        </div>
                                     </div>
+
                                 </div>
                                 <div class="tab-add__three">
-                                    <div class="add-three__elem">
-                                        <div class="add-three__elem_plus">
-                                            <img src="/img/svg/plus.svg" alt="плюс">
-                                            <img src="/img/svg/minus.svg" alt="минус">
+                                    <div class="add-two__elem">
+                                        <div class="add-two__elem_plus" onclick="svgAct(this);">
+                                            <div class="line"></div>
+                                            <div class="verline"></div>
                                         </div>
                                         <p class="fsz_text">Отливы</p>
-                                    </div>
-                                    <div class="add-three__block">
-                                        <div class="block-input">
-                                            <input type="text" value="820">
-                                        </div>
-                                        <div class="block-sum">
-                                            <p class="fsz_mini">150</p>
-                                            <img src="/img/svg/arrowDown.svg" alt="стрелка">
-                                        </div>
-                                        <div class="block-drop">
-                                            <p class="fsz_mini">150</p>
-                                            <p class="fsz_mini">150</p>
-                                            <p class="fsz_mini">150</p>
-                                            <p class="fsz_mini">150</p>
-                                            <p class="fsz_mini">150</p>
-                                            <p class="fsz_mini">150</p>
-                                            <p class="fsz_mini">150</p>
-                                            <p class="fsz_mini">150</p>
+                                        <div class="add-three__block drop-sync">
+                                            <div class="block-input">
+                                                <input type="number" value="820">
+                                            </div>
+                                            <div class="block-sum" onclick="sunDrop();">
+                                                <p class="fsz_mini">150</p>
+                                                <img src="/img/svg/arrowDown.svg" alt="стрелка">
+                                            </div>
+                                            <div class="block-drop close-drop">
+                                                <p class="fsz_mini drop-hover">150</p>
+                                                <p class="fsz_mini drop-hover">150</p>
+                                                <p class="fsz_mini drop-hover">150</p>
+                                                <p class="fsz_mini drop-hover">150</p>
+                                                <p class="fsz_mini drop-hover">150</p>
+                                                <p class="fsz_mini drop-hover">150</p>
+                                                <p class="fsz_mini drop-hover">150</p>
+                                                <p class="fsz_mini drop-hover">150</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -208,45 +209,45 @@
                             <div class="tab-add_two">
                                 <div class="add-two-wrap">
                                     <div class="add-two__elem">
-                                        <div class="add-two__elem_plus">
-                                            <img src="/img/svg/plus.svg" alt="плюс">
-                                            <img src="/img/svg/minus.svg" alt="минус">
+                                        <div class="add-two__elem_plus" onclick="svgAct(this);">
+                                            <div class="line"></div>
+                                            <div class="verline"></div>
                                         </div>
                                         <p class="fsz_tex">Тонирование окна</p>
-                                        <span class="fsz_mini">+ 516руб</span>
-                                    </div>
-                                    <div class="add-two-wrap">
-                                        <div class="add-two__drop">
-                                            <p class="fsz_mini">Бронза</p>
-                                            <img src="/img/svg/arrowDown.svg" alt="стрелка">
-                                        </div>
-                                        <div class="add-two__dropDown">
-                                            <p class="fsz_mini">Бронза</p>
-                                            <p class="fsz_mini">Бронза</p>
-                                            <p class="fsz_mini">Бронза</p>
-                                            <p class="fsz_mini">Бронза</p>
+                                        <span class="fsz_mini span-add">+ 516руб</span>
+                                        <div class="add-two-dropdown drop-sync">
+                                            <div class="add-two__drop" onclick="tonDrop();">
+                                                <p class="fsz_mini">Бронза</p>
+                                                <img src="/img/svg/arrowDown.svg" alt="стрелка">
+                                            </div>
+                                            <div class="add-two__dropDown close-drop">
+                                                <p class="fsz_mini drop-hover">Бронза</p>
+                                                <p class="fsz_mini drop-hover">Бронза</p>
+                                                <p class="fsz_mini drop-hover">Бронза</p>
+                                                <p class="fsz_mini drop-hover">Бронза</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="add-two-wrap">
                                     <div class="add-two__elem">
-                                        <div class="add-two__elem_plus">
-                                            <img src="/img/svg/plus.svg" alt="плюс">
-                                            <img src="/img/svg/minus.svg" alt="минус">
+                                        <div class="add-two__elem_plus" onclick="svgAct(this); radioDrop();">
+                                            <div class="line"></div>
+                                            <div class="verline"></div>
                                         </div>
                                         <p class="fsz_text">Ламинация профиля</p>
-                                        <span class="fsz_mini">+ 516руб</span>
-                                    </div>
-                                    <div class="add-two-wrap">
-                                        <div class="add-two__drop">
-                                            <p class="fsz_mini">Макрома</p>
-                                            <img src="/img/svg/arrowDown.svg" alt="стрелка">
-                                        </div>
-                                        <div class="add-two__dropDown">
-                                            <p class="fsz_mini">Бронза</p>
-                                            <p class="fsz_mini">Бронза</p>
-                                            <p class="fsz_mini">Бронза</p>
-                                            <p class="fsz_mini">Бронза</p>
+                                        <span class="fsz_mini span-add">+ 516руб</span>
+                                        <div class="add-two-dropdown2 drop-sync">
+                                            <div class="add-two__drop" onclick="profileDrop();">
+                                                <p class="fsz_mini">Макроме</p>
+                                                <img src="/img/svg/arrowDown.svg" alt="стрелка">
+                                            </div>
+                                            <div class="add-two__dropDown2 close-drop">
+                                                <p class="fsz_mini drop-hover">Бронза</p>
+                                                <p class="fsz_mini drop-hover">Бронза</p>
+                                                <p class="fsz_mini drop-hover">Бронза</p>
+                                                <p class="fsz_mini drop-hover">Бронза</p>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="add-two-wrap">
@@ -265,13 +266,13 @@
                                     </div>
                                 </div>
                                 <div class="add-two-wrap">
-                                    <div class="add-two__elem">
-                                        <div class="add-two__elem_plus">
-                                            <img src="/img/svg/plus.svg" alt="плюс">
-                                            <img src="/img/svg/minus.svg" alt="минус">
+                                    <div class="add-two__elem mt-block">
+                                        <div class="add-two__elem_plus" onclick="svgAct(this);">
+                                            <div class="line"></div>
+                                            <div class="verline"></div>
                                         </div>
                                         <p class="fsz_text">Монтаж + материалы</p>
-                                        <span class="fsz_mini">+ 716руб</span>
+                                        <span class="fsz_mini span-add">+ 716руб</span>
                                     </div>
                                 </div>
                             </div>
@@ -296,13 +297,68 @@
                             </div>
                         </div>
                         <div class="view-pice__btn">
-                            <input type="submit" placeholder="Уточнить цену">
+                            <input type="submit" value="Уточнить цену">
                         </div>
                     </div>
                 </div>
             </form>
         </div>
     </section>
-     
+     <script src="/js/libs/jquery-3.5.1.min.js"></script>
+
+     <script>
+        function tabBtn(elem, targetClass) {
+            var currentTab = $(elem);
+            $('.tab-nav__item').removeClass('tab-bg');
+            currentTab.addClass('tab-bg');
+            $('.tab-clear').removeClass('tab-clear_active');
+            $('.'+targetClass).addClass('tab-clear_active');
+            }
+
+         function tabNav(elem) {
+            var currentTab = $(elem);
+            $('.tab-children').removeClass('tab-type_active');
+            currentTab.addClass('tab-type_active');
+            }
+
+            function svgAct(elem) {
+            var currentTab = $(elem);
+            // $('.svg-opac').addClass('svg_active');
+            currentTab.find('.verline').toggleClass('svg_active');
+            currentTab.parent('.add-two__elem').find('.span-add').toggleClass('span-add_active');
+            currentTab.parent('.add-two__elem').find('.drop-sync').toggleClass('drop-sync_active');
+            
+            }
+            function matDrop() {
+                $('.elem2-drop__one').addClass('mat-drop_active');
+            }
+            $(document).mouseup(function (e){
+            var div = $('.close-drop');
+            if (!div.is(e.target)
+                && div.has(e.target).length === 0) {
+                $('.close-drop').removeClass('mat-drop_active');
+            }
+            });
+
+            function matDrop2() {
+                $('.elem2-drop__two').addClass('mat-drop_active');
+            }
+
+            function sunDrop() {
+                $('.block-drop').addClass('mat-drop_active');
+            }
+            function tonDrop() {
+                $('.add-two__dropDown').addClass('mat-drop_active');
+
+            }
+            function profileDrop() {
+                $('.add-two__dropDown2').addClass('mat-drop_active');
+            }
+            function radioDrop() {
+                $('.add-two__radio').addClass('mat-drop_active');
+
+            }
+
+     </script>
  </body>
  </html>

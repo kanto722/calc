@@ -1,16 +1,56 @@
 .tab-size {
 	margin-top: 30px;
+	&__title {
+		margin-bottom: 12px;
+	}
 }
 .size-text {
-
+	display: flex;
+	margin-bottom: 39px;
 		&__item {
+			margin-right: 27px;
+			cursor: pointer;
 			p {
-
+				text-decoration-line: underline;
+				color: $black-bold;
 			}
 		}
 }
 .size-input {
-
+	display: flex;
 		&__elem {
+			display: flex;
+			align-items: center;
+			margin-right: 31px;
+			p {
+				color: $gray;
+				margin-right: 10px;
+			}
+			input {
+				width: 100px;
+				border: 1px solid #6DB6FA;
+				box-sizing: border-box;
+				color: $black-bold;
+				font-family: Rubik;
+				font-style: normal;
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 150%;
+				padding: 11px 0px 9px 14px;
+			}
+			input::placeholder {
+				color: $black-bold;
+				font-family: Rubik;
+				font-style: normal;
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 150%;
+			}
+			input::-webkit-inner-spin-button { 
+				display: none;
+			  }
+		}
+		&__elem:last-child {
+			margin-right: 0;
 		}
 }

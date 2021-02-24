@@ -1,12 +1,4 @@
-// активный таб
-.tab_active{
-    background: #E1F5FE;
-}
-.tab-type_active {
-    background: #E1F5FE;
-    border: none;
-}
-// активный таб
+
 
 // бордер для табов при стоке
 .tab_stock {
@@ -56,6 +48,62 @@
 
 .hover-type:hover {
     background: #E1F5FE;
-    border: none;
+    border: 1px solid transparent;
+}
+.drop-hover:hover {
+    background: #6DB6FA;
+    color: #FFFFFF;
 }
 // hover
+
+// активный плюс минус
+.active_cube {
+    display: block;
+}
+// активный плюс минус
+
+// actuve TAB NAV
+.tab-bg {
+    background: #E1F5FE;
+}
+// actuve TAB NAV
+
+// активный таб NAV ниже
+
+.tab-type_active {
+    background: #E1F5FE;
+    border: 1px solid transparent;
+}
+// активный таб
+
+
+.tab-clear_active{
+    display: flex;
+}
+
+.svg-opac {
+    display: none;
+
+}
+.svg_active{
+    opacity: 1;
+    pointer-events: all;
+}
+.span-add_active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.drop-sync {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+.drop-sync_active {
+    opacity: 1;
+    pointer-events: all;
+}
+.mat-drop_active {
+    opacity: 1;
+    pointer-events: all;
+}

@@ -1,26 +1,64 @@
 .calc-view {
     margin-left: 70px;
+    margin-top: 30px;
     &__fon {
+        background: rgba(225, 245, 254, 0.38);
+        border: 1px solid #E1F5FE;
+        box-sizing: border-box;
+        padding: 71px 145px 66px 145px;
+
     }
 
     &__price {
+        background: #E1F5FE;
+        display: flex;
+        justify-content: space-between;
+        padding: 49px 0px 51px 30px;
     }
 }
 .view-price {
-
     &__sum {
+        display: flex;
     }
 }
 .price-sum {
 
     &__one {
+        margin-right: 44px;
+        p:nht-child(1) {
+            color: $gray;
+        }
+        p:nth-child(2){
+            margin-top: 2px;
+        }
     }
 
     &__two {
+        p:nht-child(1) {
+            color: $gray;
+        }
+        p:nth-child(2){
+            margin-top: 2px;
+        }
     }
 }
 .view-pice {
 
     &__btn {
+        input {
+            background: #2F80ED;
+            border: none;
+            outline: none;
+            text-decoration: none;
+            font-family: 'Rubik', sans-serif; 
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            color: #ffffff;
+            padding: 15px 40px 15px 40px;
+            cursor: pointer;
+        }
     }
 }
